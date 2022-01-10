@@ -1,0 +1,9 @@
+# Ignore node_modules
+# Ignore .eslintrc.yml
+# package and package lock
+
+notesFolder/
+node_modules/
+.eslintrc.yml
+package.json
+package-lock.json
