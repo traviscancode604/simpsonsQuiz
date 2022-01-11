@@ -1,51 +1,11 @@
 # simpsonsQuiz
+> Welcome to the internet, my friend, how can I help you? 
+>  - Homer Simpson
 
+---
 ## Table of Contents
-- [Question Types](#Question Types)
-```js
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-// blank blank
-```
+- [Question Types](#question-types)
+---
 ## Question Types
 
 ### Characters
