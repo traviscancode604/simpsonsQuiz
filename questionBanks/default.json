@@ -1,12 +1,4 @@
 {
-  "character" : {
-    "charQ001" : {
-      "question" : "Who founded Springfield?",
-      "answerA" : "Jebediah Springfield",
-      "answerB" : "Shelbyville Manhattan"
-    },
-    "charQ002" : "Thank you for using the car payment calculator!"
-  },
   "general" : {
     "principalPrompt" : "How much is the mortgage principal?\n Please enter a number greater than 1.00 dollar (e.g.: 10000).",
     "inputErrorMsg" : "Please enter a valid number per the instructions in the prompt.",

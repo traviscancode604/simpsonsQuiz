@@ -5,13 +5,15 @@
 ---
 ## Table of Contents
 - [Question Types](#question-types)
+- [Design Notes](#design-notes-and-thoughts)
 ---
 ## Question Types
+* Easy, Hard, or Mixed Bag
 
-### Characters
-### Geography
-### Quotes
-### General
+* General
+* Music
+* Episode Specific Details
+* Characters
 
-## Notes and Thoughts:
-Will need a default categories JSON that are season agnostic.
+## Design Notes and Thoughts
+1. Chose the difficulties for different JSON files so that a difficulty category could be easily eliminated in the game loop. It also allows for more flexability in adding to the question categories within the different JSON files.

@@ -1,0 +1,14 @@
+{
+  "character" : {
+    "charQ001" : {
+      "question" : "Who founded Springfield?",
+      "answerA" : "Jebediah Springfield",
+      "answerB" : "Shelbyville Manhattan"
+    },
+    "charQ002" : "Thank you for using the car payment calculator!"
+  },
+  "general" : {
+    "inputErrorMsg" : "Please enter a valid number per the instructions in the prompt."
+  }
+}
+
