@@ -1,14 +1,71 @@
 {
-  "character" : {
-    "charQ001" : {
-      "question" : "Who founded Springfield?",
-      "answerA" : "Jebediah Springfield",
-      "answerB" : "Shelbyville Manhattan"
-    },
-    "charQ002" : "Thank you for using the car payment calculator!"
+  "q1" : {
+    "question" : "Who was the founder of Springfield?",
+    "A" : "Jebediah Springfield",
+    "B" : "Shelbyville Manhattan",
+    "C" : "Shelbyville Manhattan",
+    "D" : "Shelbyville Manhattan",
+    "correctAnswer" : "A",
+    "type" : "Character"
+  },
+  "q2" : {
+    "question" : "What is the name of the Simpsons' family dog?",
+    "A" : "Snowball",
+    "B" : "Poochie",
+    "C" : "Santa's Little Helper",
+    "D" : "Laddie",
+    "correctAnswer" : "C",
+    "type" : "Character"
+  },
+  "q3" : {
+    "question" : "What is Homer's primary job?",
+    "A" : "Mr. Burn's Assistant",
+    "B" : "Nuclear Safety Inspector",
+    "C" : "Bartender",
+    "D" : "Construction Worker",
+    "correctAnswer" : "B",
+    "type" : "Character"
+  },
+  "q4" : {
+    "question" : "Who are The Simpsons' neighbour?",
+    "A" : "The Flanders",
+    "B" : "The Lovejoys",
+    "C" : "The Wiggums",
+    "D" : "The Skinners",
+    "correctAnswer" : "A",
+    "type" : "Character"
+  },
+  "q5" : {
+    "question" : "How old is Lisa Simpson?",
+    "A" : "Eleven",
+    "B" : "Ten",
+    "C" : "Nine",
+    "D" : "Eight",
+    "correctAnswer" : "D",
+    "type" : "Character"
+  },
+  "q6" : {
+    "question" : "How old is Bart Simpson?",
+    "A" : "Fourteen",
+    "B" : "Twelve",
+    "C" : "Ten",
+    "D" : "Eight",
+    "correctAnswer" : "C",
+    "type" : "Character"
+  },
+  "q7" : {
+    "question" : "How old is Bart Simpson?",
+    "A" : "Fourteen",
+    "B" : "Twelve",
+    "C" : "Ten",
+    "D" : "Eight",
+    "correctAnswer" : "C",
+    "type" : "Character"
   },
   "general" : {
-    "inputErrorMsg" : "Please enter a valid number per the instructions in the prompt."
+    "inputErrorMsg" : "Please enter a valid number per the instructions in the prompt.",
+    "categories" : "Character",
+    "questionTotal" : "3"
   }
 }
 
