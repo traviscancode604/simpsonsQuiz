@@ -1,7 +1,6 @@
 {
   "general" : {
-    "principalPrompt" : "How much is the mortgage principal?\n Please enter a number greater than 1.00 dollar (e.g.: 10000).",
-    "inputErrorMsg" : "Please enter a valid number per the instructions in the prompt.",
+    "inputErrorMsg" : "Please enter a valid value per the instructions in the prompt.",
     "exitMsg" : "Thank you for playing!"
   }
 }

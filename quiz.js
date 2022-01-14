@@ -11,6 +11,11 @@ let currentQuestion;
 const listOfAskedQuestions = [];
 // let currentPlayer = 1;
 
+function displayWelcome() {
+  logInBox('The Simpsons Trivia!');
+  prompt(`Welcome!\n`);
+}
+
 function logInBox(message) {
   let horizontalRule = `+${"-".repeat(message.length + 2)}+`;
   let emptyLine = `|${" ".repeat(message.length + 2)}|`;
@@ -39,6 +44,10 @@ function displayCurrentQuestion() {
   prompt(`D: ${currentQuestion['D']}`);
 }
 
+/*
+Algorithm for selectCurrentQuestion:
+Type it out here!
+*/
 function selectCurrentQuestion() {
   let bankMax, questionMax, questionNum, questionBank;
 
@@ -47,8 +56,7 @@ function selectCurrentQuestion() {
   } else {
     bankMax = difficultySelection;
   }
-  // got to here, trying to make functions that don't have side effects *******
-  // also was about to start the question validation loop
+
   switch (bankMax) {
     case 1:
     default:
@@ -60,10 +68,8 @@ function selectCurrentQuestion() {
 }
 
 // Start of game
-
 console.clear();
-logInBox('The Simpsons Trivia!');
-prompt(`Welcome!\n`);
+displayWelcome();
 prompt('Lets determine the questions. What difficulty would you like? (Only Easy Available)\nPlease Select:\n1) Easy\n2) Medium\n3) Hard\n4) Mixed Bag');
 
 difficultySelection = readline.question();
@@ -81,24 +87,32 @@ while (!VALID_QUESTION_LIMIT.includes(questionLimit)) {
 }
 questionLimit = +questionLimit;
 
-// How many players prompt to go here
-// howManyPlayers()
+//
+// howManyPlayers() to go here
+//
 
-// main game loop
 while (numberOfQuestionsAsked < questionLimit) {
-  // determinePlayerTurn();
+  //
+  // determinePlayerTurn() to go here
+  //
   let playerAnswer;
 
   selectCurrentQuestion();
-  listOfAskedQuestions.push(currentQuestion['question']); // for duplicate logic (needed)
   displayCurrentQuestion();
+  //
+  // inputQuestionAnswer() to go here
+  //
 
   playerAnswer = readline.question();
   while (!VALID_ANSWER_CHOICE.includes(playerAnswer)) {
     prompt(messages('inputErrorMsg', 'general', 'default'));
     playerAnswer = readline.question();
   }
+  //
+  // updatePlayerScore() to go here
+  //
+
   numberOfQuestionsAsked += 1;
-  console.log(`Questions Asked: ${numberOfQuestionsAsked}`);
-  console.log(listOfAskedQuestions);
+  console.log(`Questions Asked: ${numberOfQuestionsAsked}`); // For Testing
+  console.log(listOfAskedQuestions); // For Testing
 }

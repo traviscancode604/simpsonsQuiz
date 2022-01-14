@@ -3,8 +3,8 @@
     "question" : "Who was the founder of Springfield?",
     "A" : "Jebediah Springfield",
     "B" : "Shelbyville Manhattan",
-    "C" : "Shelbyville Manhattan",
-    "D" : "Shelbyville Manhattan",
+    "C" : "Moe Syzslak",
+    "D" : "Bob Terwilliger",
     "correctAnswer" : "A",
     "type" : "Character"
   },
@@ -63,9 +63,9 @@
     "type" : "Character"
   },
   "general" : {
-    "inputErrorMsg" : "Please enter a valid number per the instructions in the prompt.",
+    "inputErrorMsg" : "Please enter a valid value per the instructions in the prompt.",
     "categories" : "Character",
-    "questionTotal" : "3"
+    "questionTotal" : "7"
   }
 }
 

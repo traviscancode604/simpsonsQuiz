@@ -6,14 +6,19 @@
 ## Table of Contents
 - [Question Types](#question-types)
 - [Design Notes](#design-notes-and-thoughts)
+- [Flow Chart](#flow-chart)
 ---
 ## Question Types
-* Easy, Hard, or Mixed Bag
+* Easy, medium, hard, or 'mixed bag'.
 
+Categories can be:
 * General
 * Music
 * Episode Specific Details
 * Characters
 
 ## Design Notes and Thoughts
-1. Chose the difficulties for different JSON files so that a difficulty category could be easily eliminated in the game loop. It also allows for more flexability in adding to the question categories within the different JSON files.
+1. Chose the difficulties for different JSON files so that a difficulty category can be added into the game loop. This should also allows for more flexability in adding to the question categories within the different JSON files.
+
+## Flowchart
+Link to image to come soon.
