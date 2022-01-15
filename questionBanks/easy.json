@@ -54,12 +54,12 @@
     "type" : "Character"
   },
   "q7" : {
-    "question" : "How old is Bart Simpson?",
-    "A" : "Fourteen",
-    "B" : "Twelve",
-    "C" : "Ten",
-    "D" : "Eight",
-    "correctAnswer" : "C",
+    "question" : "What is the name of the Japanese dishwashing detergent mascot who looks like Homer?",
+    "A" : "Mr. Plow",
+    "B" : "Mr. Sideshow Mel",
+    "C" : "Mr. Burns",
+    "D" : "Mr. Sparkle",
+    "correctAnswer" : "D",
     "type" : "Character"
   },
   "general" : {
