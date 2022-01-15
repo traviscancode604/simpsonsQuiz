@@ -54,18 +54,45 @@
     "type" : "Character"
   },
   "q7" : {
-    "question" : "How old is Bart Simpson?",
-    "A" : "Fourteen",
-    "B" : "Twelve",
-    "C" : "Ten",
-    "D" : "Eight",
+    "question" : "What is the name of the Japanese dishwashing detergent mascot who looks like Homer?",
+    "A" : "Mr. Plow",
+    "B" : "Mr. Sideshow Mel",
+    "C" : "Mr. Burns",
+    "D" : "Mr. Sparkle",
+    "correctAnswer" : "D",
+    "type" : "Character"
+  },
+  "q8" : {
+    "question" : "What country is Groundskeeper Willie from?",
+    "A" : "England",
+    "B" : "Ireland",
+    "C" : "Scotland",
+    "D" : "Canada",
     "correctAnswer" : "C",
+    "type" : "Character"
+  },
+  "q9" : {
+    "question" : "Who is the host of Channel 5 news?",
+    "A" : "Robert Terwilliger",
+    "B" : "Kent Brockman",
+    "C" : "Herschel Krustofsky",
+    "D" : "Troy McClure",
+    "correctAnswer" : "B",
+    "type" : "Character"
+  },
+  "q10" : {
+    "question" : "Who is the mayor of Springfield?",
+    "A" : "Troy McClure",
+    "B" : "Joe Quimby",
+    "C" : "Tim Lovejoy",
+    "D" : "Clancy Wiggum",
+    "correctAnswer" : "B",
     "type" : "Character"
   },
   "general" : {
     "inputErrorMsg" : "Please enter a valid value per the instructions in the prompt.",
     "categories" : "Character",
-    "questionTotal" : "7"
+    "questionTotal" : "10"
   }
 }
 
