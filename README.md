@@ -8,8 +8,8 @@
 - [Prerequisites](#prerequisites)
 - [Question Types](#question-types)
 - [Design Notes](#design-notes-and-thoughts)
-- [Flow Chart](#flow-chart)
 
+README last updated: January 15, 2022
 ---
 
 ## Introduction
@@ -37,8 +37,3 @@ Categories can be:
 
 ## Design Notes and Thoughts
 1. Chose the difficulties for different JSON files so that a difficulty category can be added into the game loop. This should also allows for more flexability in adding to the question categories within the different JSON files.
-
----
- 
-## Flow Chart
-Link to image to come soon.
