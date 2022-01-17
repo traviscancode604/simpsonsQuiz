@@ -46,7 +46,12 @@ function displayCurrentQuestion() {
 
 /*
 Algorithm for selectCurrentQuestion:
-Type it out here!
+Step 1) Determine game difficulty so we know which question banks we can use.
+Step 2) Once our question bank has been determined, select a random question.
+Step 3) Check if the selecte question has been asked in this around already.
+  Step 3A) If not, let this be the current question.
+  Step 3B) If it has been used, repeat the random question selection until
+  a quesiton that has not yet been used is selected.
 */
 function selectCurrentQuestion() {
   let bankMax, questionMax, questionNum, questionBank;
@@ -62,10 +67,15 @@ function selectCurrentQuestion() {
     default:
       questionBank = EASY_QUESTIONS;
   }
-  questionMax = Number(questionBank.general.questionTotal);
-  questionNum = 'q' + String(Math.floor((Math.random() * questionMax) + 1));
-  currentQuestion = questionBank[questionNum];
+  do {
+    questionMax = Number(questionBank.general.questionTotal);
+    questionNum = 'q' + String(Math.floor((Math.random() * questionMax) + 1));
+    currentQuestion = questionBank[questionNum];
+    if (!listOfAskedQuestions.includes(currentQuestion['question'])) break;
+  } while (1);
+  listOfAskedQuestions.push(currentQuestion['question']);
 }
+
 
 // Start of game
 console.clear();

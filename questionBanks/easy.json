@@ -54,7 +54,7 @@
     "type" : "Character"
   },
   "q7" : {
-    "question" : "What is the name of the Japanese dishwashing detergent mascot who looks like Homer?",
+    "question" : "What Japanese dishwashing detergent mascot who looks like Homer?",
     "A" : "Mr. Plow",
     "B" : "Mr. Sideshow Mel",
     "C" : "Mr. Burns",
@@ -89,10 +89,37 @@
     "correctAnswer" : "B",
     "type" : "Character"
   },
+  "q11" : {
+    "question" : "What kind of beer does Homer regularly drink?",
+    "A" : "Alamo",
+    "B" : "Budweiser",
+    "C" : "Pawtucket Patriot",
+    "D" : "Duff",
+    "correctAnswer" : "D",
+    "type" : "Character"
+  },
+  "q12" : {
+    "question" : "What instrument does Lisa play?",
+    "A" : "Trumpet",
+    "B" : "Saxophone",
+    "C" : "Clarinet",
+    "D" : "Oboe",
+    "correctAnswer" : "B",
+    "type" : "Character"
+  },
+  "q13" : {
+    "question" : "Who runs the Kwik-E-Mart",
+    "A" : "Apu Nahasapeemapetilon",
+    "B" : "Barney Gumble",
+    "C" : "Cookie Kwan",
+    "D" : "Gil Gunderson",
+    "correctAnswer" : "A",
+    "type" : "Character"
+  },
   "general" : {
     "inputErrorMsg" : "Please enter a valid value per the instructions in the prompt.",
     "categories" : "Character",
-    "questionTotal" : "10"
+    "questionTotal" : "13"
   }
 }
 
