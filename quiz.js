@@ -4,12 +4,23 @@ const DEFAULT_PROMPTS = require('./questionBanks/default.json');
 const VALID_DIFFICULTY = ['1', `2`, `3`, `4`];
 const VALID_ANSWER_CHOICE = ['a', 'b', 'c', 'd', 'A', 'B', 'C', 'D'];
 const VALID_QUESTION_LIMIT = ["1", "5", "10", "20"];
+const VALID_PLAYER_LIMIT = ["1", "2", "3", "4"];
+
 let difficultySelection;
 let questionLimit;
+let playerLimit;
 let numberOfQuestionsAsked = 0;
+let currentPlayerTurn = 0;
+let playerAnswer;
+let player1Score;
+let player2Score;
+let player3Score;
+let player4Score;
+
 let currentQuestion;
+
 const listOfAskedQuestions = [];
-// let currentPlayer = 1;
+
 
 function displayWelcome() {
   logInBox('The Simpsons Trivia!');
@@ -33,6 +44,13 @@ function prompt(message) {
 
 function messages(message, category = 'general') {
   return DEFAULT_PROMPTS[category][message];
+}
+
+function initializeGame() {
+  player1Score = 0;
+  player2Score = 0;
+  player3Score = 0;
+  player4Score = 0;
 }
 
 function displayCurrentQuestion() {
@@ -76,6 +94,44 @@ function selectCurrentQuestion() {
   listOfAskedQuestions.push(currentQuestion['question']);
 }
 
+function checkIfCorrectAnswer() {
+  return currentQuestion['correctAnswer'] === playerAnswer.toUpperCase();
+}
+
+function updatePlayerScore(answerIsCorrect) {
+  switch (currentPlayerTurn) {
+    case 1: player1Score += +answerIsCorrect;
+      break;
+    case 2: player2Score += +answerIsCorrect;
+      break;
+    case 3: player3Score += +answerIsCorrect;
+      break;
+    case 4: player4Score += +answerIsCorrect;
+      break;
+  }
+}
+
+function determinePlayerTurn() {
+  currentPlayerTurn = currentPlayerTurn === playerLimit ?
+    1 : currentPlayerTurn += 1;
+}
+
+function displayCorrectAnswer() {
+  prompt(`The correct answer is: ${currentQuestion['correctAnswer']}. You chose: ${playerAnswer.toUpperCase()}`);
+}
+
+function displayPlayerScores() {
+  let currentPlayerScores = [
+    player1Score,
+    player2Score,
+    player3Score,
+    player4Score
+  ];
+  currentPlayerScores.length = playerLimit;
+  currentPlayerScores.forEach((playerScore, idx) => {
+    prompt(`Player ${idx + 1}: ${playerScore} points.`);
+  });
+}
 
 // Start of game
 console.clear();
@@ -89,7 +145,7 @@ while (!VALID_DIFFICULTY.includes(difficultySelection)) {
 }
 difficultySelection = +difficultySelection;
 
-prompt('How many questions would you like?\n 1, 5, 10, or 20?');
+prompt('How many questions each would you like?\n 1, 5, 10, or 20?');
 questionLimit = readline.question();
 while (!VALID_QUESTION_LIMIT.includes(questionLimit)) {
   prompt(messages('inputErrorMsg', 'general', 'default'));
@@ -97,30 +153,34 @@ while (!VALID_QUESTION_LIMIT.includes(questionLimit)) {
 }
 questionLimit = +questionLimit;
 
-//
-// howManyPlayers() to go here
-//
+prompt('How many players?\n 1, 2, 3, or 4?');
+playerLimit = readline.question();
+while (!VALID_PLAYER_LIMIT.includes(playerLimit)) {
+  prompt(messages('inputErrorMsg', 'general', 'default'));
+  playerLimit = readline.question();
+}
+playerLimit = +playerLimit;
 
-while (numberOfQuestionsAsked < questionLimit) {
-  //
-  // determinePlayerTurn() to go here
-  //
-  let playerAnswer;
+initializeGame();
 
+while (numberOfQuestionsAsked < questionLimit * playerLimit) {
+
+  determinePlayerTurn();
   selectCurrentQuestion();
   displayCurrentQuestion();
-  //
-  // inputQuestionAnswer() to go here
-  //
-
+  prompt(`Player ${currentPlayerTurn} please select an answer.`);
   playerAnswer = readline.question();
   while (!VALID_ANSWER_CHOICE.includes(playerAnswer)) {
     prompt(messages('inputErrorMsg', 'general', 'default'));
     playerAnswer = readline.question();
   }
-  //
-  // updatePlayerScore() to go here
-  //
+
+  updatePlayerScore(checkIfCorrectAnswer());
+  displayCorrectAnswer();
+  displayPlayerScores();
+
+  prompt(`Press enter to continue.`);
+  readline.question();
 
   numberOfQuestionsAsked += 1;
   console.log(`Questions Asked: ${numberOfQuestionsAsked}`); // For Testing

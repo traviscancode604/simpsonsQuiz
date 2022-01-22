@@ -116,10 +116,55 @@
     "correctAnswer" : "A",
     "type" : "Character"
   },
+  "q14" : {
+    "question" : "Which family member joined Mensa?",
+    "A" : "Marge",
+    "B" : "Bart",
+    "C" : "Homer",
+    "D" : "Lisa",
+    "correctAnswer" : "D",
+    "type" : "Character"
+  },
+  "q15" : {
+    "question" : "In most episodes, who is Mr. Burn's assistant?",
+    "A" : "Carl Carlson",
+    "B" : "Waylon Smithers",
+    "C" : "Homer Simpson",
+    "D" : "Lenny Leonard",
+    "correctAnswer" : "B",
+    "type" : "Character"
+  },
+  "q16" : {
+    "question" : "What is the name of Homer's father?",
+    "A" : "Abe",
+    "B" : "Jasper",
+    "C" : "Monty",
+    "D" : "Homer Sr.",
+    "correctAnswer" : "A",
+    "type" : "Character"
+  },
+  "q17" : {
+    "question" : "What is Bart doing during the opening title sequence of most episodes?",
+    "A" : "Handling plutonium",
+    "B" : "Writing on a chalkboard",
+    "C" : "Riding a bike",
+    "D" : "Parking in the driveway",
+    "correctAnswer" : "B",
+    "type" : "Character"
+  },
+  "q18" : {
+    "question" : "What type of power plant does Mr. Burns own?",
+    "A" : "Coal",
+    "B" : "Hydro",
+    "C" : "Gas",
+    "D" : "Nuclear",
+    "correctAnswer" : "D",
+    "type" : "Character"
+  },
   "general" : {
     "inputErrorMsg" : "Please enter a valid value per the instructions in the prompt.",
     "categories" : "Character",
-    "questionTotal" : "13"
+    "questionTotal" : "18"
   }
 }
 
