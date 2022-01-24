@@ -150,7 +150,7 @@
     "C" : "Riding a bike",
     "D" : "Parking in the driveway",
     "correctAnswer" : "B",
-    "type" : "Character"
+    "type" : "Episode"
   },
   "q18" : {
     "question" : "What type of power plant does Mr. Burns own?",
@@ -159,7 +159,7 @@
     "C" : "Gas",
     "D" : "Nuclear",
     "correctAnswer" : "D",
-    "type" : "Character"
+    "type" : "General"
   },
   "general" : {
     "inputErrorMsg" : "Please enter a valid value per the instructions in the prompt.",

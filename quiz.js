@@ -1,5 +1,6 @@
 const readline = require('readline-sync');
 const EASY_QUESTIONS = require('./questionBanks/easy.json');
+const MED_QUESTIONS = require('./questionBanks/medium.json');
 const DEFAULT_PROMPTS = require('./questionBanks/default.json');
 const VALID_DIFFICULTY = ['1', `2`, `3`, `4`];
 const VALID_ANSWER_CHOICE = ['a', 'b', 'c', 'd', 'A', 'B', 'C', 'D'];
@@ -71,19 +72,29 @@ Step 3) Check if the selecte question has been asked in this around already.
   Step 3B) If it has been used, repeat the random question selection until
   a quesiton that has not yet been used is selected.
 */
+
+
 function selectCurrentQuestion() {
-  let bankMax, questionMax, questionNum, questionBank;
+  // this function and pickFromQuestionBank()
+  // can be refactored. Only need the difficulty picked
+  // once at the start of the game.
+  let questionBankChoice;
 
   if (difficultySelection === 4) {
-    bankMax = Math.floor(Math.random() * 3) + 1;
+    questionBankChoice = Math.floor(Math.random() * 3) + 1;
   } else {
-    bankMax = difficultySelection;
+    questionBankChoice = difficultySelection;
   }
+  pickFromQuestionBank(questionBankChoice);
+}
 
-  switch (bankMax) {
-    case 1:
-    default:
-      questionBank = EASY_QUESTIONS;
+function pickFromQuestionBank(bankChoice) {
+  let questionMax, questionNum, questionBank;
+  switch (bankChoice) {
+    case 1: questionBank = EASY_QUESTIONS;
+      break;
+    case 2: questionBank = MED_QUESTIONS;
+      break;
   }
   do {
     questionMax = Number(questionBank.general.questionTotal);

@@ -1,0 +1,61 @@
+{
+  "q1" : {
+    "question" : "In the episode 'Radioactive Man', who played Fallout Boy?",
+    "A" : "Bart Simpson",
+    "B" : "Millhouse Van Houten",
+    "C" : "Martin Short",
+    "D" : "Ralph Wiggum",
+    "correctAnswer" : "B",
+    "type" : "Character"
+  },
+  "q2" : {
+    "question" : "In the episode 'Radioactive Man', who played Radioactive Man?",
+    "A" : "Homer Simpson",
+    "B" : "Kirk Van Houten",
+    "C" : "Troy McClure",
+    "D" : "Rainier Wolfcastle",
+    "correctAnswer" : "D",
+    "type" : "Character"
+  },
+  "q3" : {
+    "question" : "In the episode 'Radioactive Man', who played Fallout Boy?",
+    "A" : "Bart Simpson",
+    "B" : "Millhouse Van Houten",
+    "C" : "Martin Short",
+    "D" : "Ralph Wiggum",
+    "correctAnswer" : "B",
+    "type" : "Character"
+  },
+  "q4" : {
+    "question" : "In the episode 'Radioactive Man', 'the goggles do nothing' for what type of fluid that hits Radioactive Man?",
+    "A" : "Salt Water",
+    "B" : "Sewage",
+    "C" : "Fresh Water",
+    "D" : "Real Acid",
+    "correctAnswer" : "D",
+    "type" : "General"
+  },
+  "q5" : {
+    "question" : "In the episode 'Who Shot Mr. Burns?', which suspect wrongfully turned themself in?",
+    "A" : "Waylon Smithers",
+    "B" : "Homer Simpson",
+    "C" : "Maggie Simpson",
+    "D" : "Seymour Skinner",
+    "correctAnswer" : "A",
+    "type" : "General"
+  },
+  "q6" : {
+    "question" : "test test test",
+    "A" : "Waylon Smithers",
+    "B" : "Homer Simpson",
+    "C" : "Maggie Simpson",
+    "D" : "Seymour Skinner",
+    "correctAnswer" : "A",
+    "type" : "General"
+  },
+  "general" : {
+    "inputErrorMsg" : "Please enter a valid value per the instructions in the prompt.",
+    "categories" : "Character",
+    "questionTotal" : "6"
+  }
+}

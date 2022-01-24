@@ -1,0 +1,34 @@
+{
+  "q1" : {
+    "question" : "In the episode 'Radioactive Man', what TV show did Moe say he was a part of?",
+    "A" : "The Little Rascals",
+    "B" : "The Honeymooners",
+    "C" : "The Brady Bunch",
+    "D" : "Gilligan's Island",
+    "correctAnswer" : "A",
+    "type" : "Character"
+  },
+  "q2" : {
+    "question" : "In the episode 'Radioactive Man', which staff member of Springfield Elementary helps the TV producers read lines?",
+    "A" : "Princpal Skinner",
+    "B" : "Lunch Lady Doris",
+    "C" : "Mrs. Krabappel",
+    "D" : "Miss Hoover",
+    "correctAnswer" : "B",
+    "type" : "Character"
+  },
+  "q3" : {
+    "question" : "In the episode 'Radioactive Man', which staff member of Springfield Elementary helps the TV producers read lines?",
+    "A" : "Princpal Skinner",
+    "B" : "Lunch Lady Doris",
+    "C" : "Mrs. Krabappel",
+    "D" : "Miss Hoover",
+    "correctAnswer" : "B",
+    "type" : "Character"
+  },
+  "general" : {
+    "inputErrorMsg" : "Please enter a valid value per the instructions in the prompt.",
+    "categories" : "Character",
+    "questionTotal" : "3"
+  }
+}
