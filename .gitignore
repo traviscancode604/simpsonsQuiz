@@ -6,5 +6,3 @@ notesFolder/
 node_modules/
 .gitignore
 .eslintrc.yml
-package.json
-package-lock.json

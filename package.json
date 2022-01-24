@@ -1,0 +1,31 @@
+{
+  "name": "simpsonsquiz",
+  "version": "1.0.0",
+  "description": "## Question Types",
+  "main": "quiz.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/traviscancode604/simpsonsQuiz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "17.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/traviscancode604/simpsonsQuiz/issues"
+  },
+  "homepage": "https://github.com/traviscancode604/simpsonsQuiz#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.12.1",
+    "eslint-cli": "^1.1.1"
+  }
+}
